@@ -6,7 +6,25 @@ namespace NumbersGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter Something");
+            StartSequence();
+            try
+            {
+
+            }
+            catch
+            {
+
+            }
+            finally
+            {
+                Console.WriteLine("Program is done");
+            }
+        }
+
+        public static void StartSequence()
+        {
+            string input = Console.ReadLine();
         }
     }
 }
