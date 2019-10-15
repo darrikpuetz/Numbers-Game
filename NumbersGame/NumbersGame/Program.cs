@@ -12,7 +12,7 @@ namespace NumbersGame
             {
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
@@ -26,31 +26,44 @@ namespace NumbersGame
         {
             Console.WriteLine("Enter a number greater than zero");
             int input = Convert.ToInt32(Console.ReadLine());
-            int [] startarr = new int[input];
+            int[] startarr = new int[input];
             Populate(startarr);
             GetSum();
             GetProduct();
             GetQuotient();
 
         }
-        public static int[] Populate(int [] arr)
+        public static int[] Populate(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
             {
-                Console.WriteLine($"Please enter a number number {i+1}/{arr.Length}");
-            arr[i]= Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"Please enter a number number {i + 1}/{arr.Length}");
+                arr[i] = Convert.ToInt32(Console.ReadLine());
             }
             return arr;
         }
 
-        public static void GetSum()
+        public static int GetSum(int[] sumArr)
         {
-        }
-        public static void GetProduct()
-        {
-        }
-        public static void GetQuotient()
-        {
+            int sum = 0;
+
+            for (int i = 0; i < sumArr.Length; i++)
+            {
+                sum += sumArr[i];
+            }
+            if (sum < 20)
+            {
+                throw (new Exception($"Value of {sum} is too low"));
+            }
+                Console.WriteLine($"The sum of the arr is {sum}");
+                return sum;
+
+            }
+            public static int GetProduct()
+            {
+            }
+            public static decimal GetQuotient()
+            {
+            }
         }
     }
-}
