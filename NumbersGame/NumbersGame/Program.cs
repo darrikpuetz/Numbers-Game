@@ -12,9 +12,9 @@ namespace NumbersGame
             {
 
             }
-            catch
+            catch(Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
             finally
             {
@@ -25,15 +25,22 @@ namespace NumbersGame
         public static void StartSequence()
         {
             Console.WriteLine("Enter a number greater than zero");
-            string input = Convert.ToInt32(Console.ReadLine());
-            Populate();
+            int input = Convert.ToInt32(Console.ReadLine());
+            int [] startarr = new int[input];
+            Populate(startarr);
             GetSum();
             GetProduct();
             GetQuotient();
 
         }
-        public static void Populate()
+        public static int[] Populate(int [] arr)
         {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine($"Please enter a number number {i+1}/{arr.Length}");
+            arr[i]= Convert.ToInt32(Console.ReadLine());
+            }
+            return arr;
         }
 
         public static void GetSum()
