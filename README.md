@@ -34,11 +34,11 @@ Then select and open ```Numbers-Game.sln```
 ### Visuals
 
 #### Application Start
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](https://github.com/darrikpuetz/Numbers-Game/blob/master/NumbersGame/ScreenShots/opening_screen.PNG)
 #### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](https://github.com/darrikpuetz/Numbers-Game/blob/master/NumbersGame/ScreenShots/using.PNG)
 #### Application End
-![Image 1](https://via.placeholder.com/750x500)
+![Image 1](https://github.com/darrikpuetz/Numbers-Game/blob/master/NumbersGame/ScreenShots/proces_screenshot.PNG)
 
 ---
 
