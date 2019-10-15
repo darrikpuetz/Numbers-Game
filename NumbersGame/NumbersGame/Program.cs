@@ -55,15 +55,20 @@ namespace NumbersGame
             {
                 throw (new Exception($"Value of {sum} is too low"));
             }
-                Console.WriteLine($"The sum of the arr is {sum}");
-                return sum;
+            Console.WriteLine($"The sum of the arr is {sum}");
+            return sum;
 
-            }
-            public static int GetProduct()
-            {
-            }
-            public static decimal GetQuotient()
-            {
-            }
+        }
+        public static int GetProduct(int[] productArr, int productSum)
+        {
+            Console.WriteLine($"Select a random number between 1 and {productArr.Length} ");
+            int input = Convert.ToInt32(Console.ReadLine());
+            int product = productSum * productArr[input - 1];
+            return product;
+            Console.WriteLine("")
+        }
+        public static decimal GetQuotient()
+        {
         }
     }
+}
